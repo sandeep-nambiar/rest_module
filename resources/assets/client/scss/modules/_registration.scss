@@ -1,0 +1,58 @@
+.register_section{
+	padding: 30px;
+	border:1px solid #ccc;
+	@extend %white-bg;
+	@include border-radius(4px);
+	margin: 30px 0;
+	border-bottom:2px solid #444;
+
+	& .head-register{
+		color: $primary-color;
+		@extend %margin-reset;
+		@extend %margin-bottom;
+	}
+
+	& label{
+		font-weight: normal !important;
+	}
+
+	& .form-control{
+		height: 45px;
+		border-color: #ccc;
+		box-shadow: none;
+	}
+
+	& .btn{
+		width: 100%;
+		background: $primary-color;
+		@extend %border-none;
+		height: 45px;
+	}
+	& .forgot-link{
+		margin: 10px 0;
+	}
+
+	&.login_section{
+		padding: 0;
+
+		& .form-body{
+			padding:0 30px;
+		}
+		& .head-register{
+			padding: 30px 30px 0;
+		}
+		& .bottom-sec{
+			padding: 30px;
+			background: lighten($primary-color, 33%);
+			border-top:1px solid #ddd;
+
+			& p{
+				margin-bottom: 5px;
+			}
+			& a{
+				font-size: 18px;
+				color: $primary-color;
+			}
+		}
+	}
+}

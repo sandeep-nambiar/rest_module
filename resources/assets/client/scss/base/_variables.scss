@@ -1,0 +1,62 @@
+@import "../config/_style.config";
+
+/**
+ * #Consistant Percentage for (Darken || Lighten)
+ */
+
+$darken-ratio: 15%;
+$lighten-ratio: 15%;
+
+/**
+ * #Colors Defined
+ */
+
+//theme: Blue-Pink
+$primary-color-darken: darken($primary-color, $darken-ratio);
+$primary-color-lighten: lighten($primary-color, $lighten-ratio);
+
+$secondary-color-darken: darken($secondary-color, $darken-ratio);
+$secondary-color-lighten: lighten($secondary-color, $lighten-ratio);
+
+/**
+ * #Font Colors Definded
+ */
+
+$black: #323232;
+$black-darken: darken($black, $darken-ratio);
+$black-lighten: lighten($black, $lighten-ratio);
+
+$grey: #8a8a8a;
+$grey-darken: darken($grey, $darken-ratio);
+$grey-lighten: lighten($grey, $lighten-ratio);
+
+$white: #ffffff;
+
+$bg-color: #f7f7f7;
+
+/**
+ * #Gutters And Margins Defined
+ */
+
+$padding: 10px;
+$margin: 10px;
+
+/**
+ * Slider Defined
+ */
+
+$slider-width: 1370px;
+
+/**
+ * Media Quries break points
+ */
+
+$break-mobile: 320px;
+$break-small: 786px;
+$break-medium: 986px;
+$break-large: 1200px;
+
+/**
+ * z-index
+ */
+$z-top: 1;

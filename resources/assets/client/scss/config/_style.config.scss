@@ -1,0 +1,35 @@
+/**
+ * Theme Config
+ * #Configure Theme ref: ./base/_variables.scss
+ */
+
+/**
+ * theme: Blue-Pink
+ */
+$font-family: 'Conv_zil';// font family
+//$font-family: 'Roboto', sans-serif;
+$primary-color: #53c9f4; //Blue
+$secondary-color: #cc33cc; //Pink
+
+$filter-box-bg: $primary-color; 
+$filter-box-bg-opacity: 0.8;
+$primary-btn: $primary-color;
+
+$border-color: #c6c6c6;
+
+$footer-bg: #404040;
+$footer-color: #d4d4d4;
+
+
+/**
+ * theme: Orange
+ */
+//$font-family: 'Conv_zil';// font family
+// $primary-color: #FBAF41; //Orange
+// $secondary-color: #cc33cc; //Pink
+ 
+// $filter-box-bg: $secondary-color;
+// $filter-box-bg-opacity: 0.2;
+// $primary-btn: $primary-color;
+// $border-color: #c6c6c6;
+// $footer-bg: #404040;

@@ -1,0 +1,18 @@
+/**
+ * Reset Bootstrap Grid Guuters
+ */
+
+.row{
+	margin-left: -$margin;
+	margin-right: -$margin;
+}
+[class^="col-"] {
+	padding-left: $padding;
+	padding-right: $padding;
+}
+ul, ol{
+	margin-bottom: 0;
+}
+a, a:focus, a:hover{
+	text-decoration: none;
+}

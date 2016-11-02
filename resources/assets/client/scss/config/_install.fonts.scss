@@ -1,0 +1,15 @@
+/**
+ * Add New fonts in accordance with the theme 
+ * config it in './config/_style.config.scss'
+ */
+
+/**
+ * Font-family 'Conv_zil'
+ */
+@font-face {
+	font-family: 'Conv_zil';
+	src: url('../../fonts/zil.eot');
+	src: local('☺'), url('../../fonts/zil.woff') format('woff'), url('../../fonts/zil.ttf') format('truetype'), url('../../fonts/zil.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,56 @@
+.logo{
+	padding:10px 0;
+}
+.right-section__blocks{
+	padding: 10px 0 10px 15px;
+	margin-top: 30px;
+
+	& li{
+		vertical-align: middle;
+		padding: 0 10px;
+		border-left:1px solid $border-color;
+
+		&:first-child{
+			border-left: 0;
+		}
+
+		& a{
+			font-size: 12px;
+			color: $black;
+		}
+
+		& img, & span{
+			@include inline-block;
+			vertical-align: middle;
+		}
+		& span{
+			margin-right: 5px;
+		}
+
+		&:last-child{
+			padding-right: 0;
+		}
+
+		&.right-section__blocks--myaccount{
+
+			& a{
+				color: $primary-color;
+			}
+		}
+	}
+}
+.right-section__blocks--myaccount{
+	& .user__image{
+		width: 25px;
+		height: 25px;
+		@include border-radius(100%);
+		margin-right: 3px;
+	}
+	& .user__image, & span{
+		@extend %verical-middle;
+	}
+}
+.icons-review{
+	width: 19px;
+	height: 20px;
+}

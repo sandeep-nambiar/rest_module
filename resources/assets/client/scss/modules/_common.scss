@@ -1,0 +1,35 @@
+@import "../config/_install.fonts";
+@import "../base/_bootstrap-resets";
+@import "../base/_extends";
+@import "./_header";
+@import "./_nav";
+@import "./_filter";
+@import "./_home";
+@import "./_registration";
+@import "./_footer";
+
+/**
+ * Search Result Page
+ */
+@import "./_search_navigation";
+
+/**
+ * Spriting Images
+ */
+
+@import "icons/*.png";
+@include all-icons-sprites;
+
+
+
+body{
+	font-family:$font-family;
+	background: $bg-color;
+}
+.custom-radio{
+	& input[type="radio"]{
+		color: $white;
+		background:$primary-color;
+		margin-right: 10px;
+	}
+}

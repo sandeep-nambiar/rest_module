@@ -1,0 +1,6 @@
+@media screen 
+  and (max-width: $slider-width) {
+  .slider-container, .filter{
+  	width: 100%;
+  }
+}

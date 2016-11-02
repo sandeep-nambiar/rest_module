@@ -1,0 +1,115 @@
+footer{
+	background: $footer-bg;
+	color: $footer-color;
+	@include box-sizing(border-box);
+}
+.grid--inline{
+	@include inline-block;
+	margin-left:-2px;
+	vertical-align: middle;
+}
+.grid--40{
+	width: 40%;
+}
+.grid--60{
+	width: 60%;
+}
+.footer__top{
+	padding:10px 0;
+}
+.footer__subscription{
+	& h4, & p{
+		@extend %margin-reset;
+	}
+}
+.from-subscription{
+	padding-left:25px;
+	@extend %margin-reset;
+
+	& .form-control, & .btn-default{
+		height: 40px;
+		@include border-radius(0);
+		@extend %border-none;
+	}
+	& .btn-default, & .btn-default:focus, & .btn-default:hover{
+		@extend %color-white;
+		background: $primary-color;
+		@extend %border-none;
+	}
+}
+.footer__middle{
+	background: lighten($footer-bg, 5%);
+	@include box-shadow(rgba(#000,0.4) 0 2px 3px);
+}
+.footer__main-menus{
+	& li{
+		@include inline-block;
+		padding:20px 10px;
+		width: (100%/6);
+		margin-left: -3px;
+
+		& a{
+			color: $footer-color;
+			font-size: 13px;
+		}
+	}
+}
+.footer__bottom{
+	padding: 25px 0 0;
+
+	& li{
+		line-height: 14px;
+
+		& a{
+			color: #bababa;
+			font-size: 11px;
+		}
+	}
+}
+.grid-distributed{
+	vertical-align: top;
+	width: (100%/5);
+	margin-left:-3px;
+}
+.footer__sub-menus{
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #000;
+}
+.footer__social{
+	@extend %margin-bottom;
+}
+.footer__social-icons{
+	& span, & a{
+		@extend %verical-middle;
+	}
+
+	& span{
+		color:#878787;
+		margin-right: 10px;
+	}
+
+}
+.footer__verify{
+	@extend .footer__social-icons;
+	& span{
+		@extend %verical-middle;
+	}
+}
+.footer__cards{
+	@extend .footer__social-icons;
+	padding: 10px 0;
+
+	& span{
+		margin-right: 0;
+
+		&:first-child{
+			margin-right: 10px;
+		}
+	}
+}
+.footer__copyright{
+	color: #878787;
+	padding: 10px 0;
+	font-size: 11px;
+}
